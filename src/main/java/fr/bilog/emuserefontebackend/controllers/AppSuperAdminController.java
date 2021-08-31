@@ -34,6 +34,7 @@ public class AppSuperAdminController {
     @PutMapping(value = "/updateProvenance/{id}", consumes = {"multipart/form-data"})
     ResponseEntity<?> updateProvenance(@PathVariable Long id, @ModelAttribute ProvenanceRequest provenanceRequest) {
         Provenance provenance = appDataService.updateProvenance(provenanceRequest, id);
+
         if (provenance != null) {
             return ResponseEntity.ok(new HttpResponse("200", "provenance update successful"));
         } else {
