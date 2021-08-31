@@ -44,6 +44,7 @@ public class AppAdminController {
 
     @GetMapping("/getAllArticles")
     ResponseEntity<?> getArticles() {
+        
         return ResponseEntity.ok(articleService.getArticles());
     }
 
