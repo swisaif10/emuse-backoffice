@@ -1,4 +1,4 @@
-package fr.bilog.emuserefontebackend.entities;
+package fr.bilog.emuserefontebackend.entities.profiles;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -18,7 +18,6 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique = true)
     private String username;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
@@ -27,6 +26,8 @@ public class User {
     @Column()
     private boolean isEnabled;
 
-    @OneToOne(fetch = FetchType.EAGER)
+    @OneToOne
     private Role role;
+
+
 }

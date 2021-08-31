@@ -13,9 +13,9 @@ public class JwtUtils {
     private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
 
 
-    private String jwtSecret = SecurityParams.SECRET;
+    private final String jwtSecret = SecurityParams.SECRET;
 
-    private Long jwtExpirationMs = SecurityParams.EXPIRATION;
+    private final Long jwtExpirationMs = SecurityParams.EXPIRATION;
 
     public String generateJwtToken(Authentication authentication) {
 

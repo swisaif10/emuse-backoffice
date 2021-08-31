@@ -1,4 +1,4 @@
-package fr.bilog.emuserefontebackend.entities;
+package fr.bilog.emuserefontebackend.entities.profiles;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,11 +13,12 @@ import javax.persistence.Entity;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class AppAdmin extends User{
+public class AppAdmin extends User {
     @Column()
     private String email;
     @Column()
     private String nom;
     @Column()
     private String prenom;
+
 }

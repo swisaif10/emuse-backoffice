@@ -1,7 +1,7 @@
 package fr.bilog.emuserefontebackend.security;
 
 
-import fr.bilog.emuserefontebackend.entities.User;
+import fr.bilog.emuserefontebackend.entities.profiles.User;
 import fr.bilog.emuserefontebackend.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
