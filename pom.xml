@@ -107,8 +107,7 @@
 		</repository>
 	</distributionManagement>
 	<build>
-		<finalName>emusetest</finalName>
-		<plugins>
+ 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
