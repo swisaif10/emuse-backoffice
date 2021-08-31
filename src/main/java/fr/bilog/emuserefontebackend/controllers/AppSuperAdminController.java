@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 
 @AllArgsConstructor
 @RestController
-
 @RequestMapping("/appSuperAdmin")
 public class AppSuperAdminController {
     private AccountService accountService;
