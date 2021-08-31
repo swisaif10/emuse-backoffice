@@ -8,6 +8,7 @@ import fr.bilog.emuserefontebackend.entities.profiles.ApplicationType;
 import fr.bilog.emuserefontebackend.models.*;
 import fr.bilog.emuserefontebackend.services.AccountService;
 import fr.bilog.emuserefontebackend.services.AppDataService;
+import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -28,6 +29,7 @@ public class AppSuperAdminController {
             return ResponseEntity.badRequest().body(new HttpResponse("201", "provenance ko"));
         }
     }
+
 
     @PutMapping(value = "/updateProvenance/{id}", consumes = {"multipart/form-data"})
     ResponseEntity<?> updateProvenance(@PathVariable Long id, @ModelAttribute ProvenanceRequest provenanceRequest) {
