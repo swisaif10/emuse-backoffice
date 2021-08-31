@@ -16,8 +16,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/appAdmin")
 public class AppAdminController {
     private ArticleService articleService;
+    
     private AppUserService appUserService;
     private AppDataService appDataService;
+    
 
     @GetMapping("/initAppAdminData")
     ResponseEntity<?> initData() {
